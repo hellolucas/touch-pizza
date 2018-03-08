@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og:http://ogp.me/ns#">
+
+	<meta charset="UTF-8">
+	
+	<link rel="canonical" href="index.html">
+	<link rel="image_src" href="imgs/fbImage.jpg">
+	<meta name="description" content="Com pizzas feitas na hora e saídas em 2 minutos, a Touch and Pizza produz pizzas italianas a qualquer hora." />
+	<meta property="og:image" content="imgs/fbImage.jpg" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Touch and Pizza - Pizzas em 2 minutos!">
+	<meta property="og:url" content="index.html">
+	<meta property="og:description" content="Quentes e frescas do forno e saídas em 2 minutos, a Touch and Pizza garante deliciosos sabores italianos feitos na hora no forno da máquina, a qualquer hora.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="imgs/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" media='screen and (min-width: 769px)' href ="css/styles.css">
+	<link rel="stylesheet" media='screen and (max-width: 768px)' href ="css/stylesMob.css">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3?key=AIzaSyCneMqa8t5tVn8sZCMJp0NzLf0AEr0ovPc"></script>
+	<script type="text/javascript" src="js/instafeed.js"></script>
+	<script type="text/javascript">
+
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-54354076-1', 'auto');
+		ga('send', 'pageview');
+		
+	</script>
+
+	<title>Touch&Pizza</title>
+
+	</head>
+	<body>
+	<div id="fb-root"></div>
+	<script>
+
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=869630863067326&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+	function getInstaPhotos(tag,counts,client,sort,targets) {
+		var i = 0;
+		targets.forEach(function(target) {
+			var insta = new Instafeed({
+		            get: 'tagged',
+		            tagName: tag,
+		            sortBy: sort[i],
+		            target: target,
+		            clientId: client,
+		            limit:counts[i],
+		            template: '<div class="instaImgs" style="overflow:hidden;position:relative;"><img src="imgs/scroll_down/scroll-40.png" style="position:absolute;width:20px;height:20px;bottom:10px;right:10px;"><img class="insta-pic" src="{{image}}"></div>'
+		        });
+			insta.run();
+			i++;
+		});
+	}
+	var  client = 'f1c87366055f409985e5c84ff78cb650';
+	if (client) {
+	   getInstaPhotos("pizza",[4, 2, 4],client,["most-recent", "random", "most-recent"],["where1","where5","whereMob2"]);
+	}
+
+
+	//<![CDATA[
+		$(window).load(function() {
+			$('#status').fadeOut(600); // will first fade out the loading animation
+			$('#preloader').fadeOut(600); // will fade out the white DIV that covers the website.
+		});
+	//]]>
+
+	</script>
+	<div id="preloader">
+		<canvas id="status"></canvas>
+		<p>Loading...</p>
+	</div>
+	<div id="desktopLayout">
+		<div id="fancyTalkToUs">
+			<div id="containerFancy">
+				<div id="closeFancy"></div>
+				<div id="logoContact"><img src="imgs/tp_logo_white.png"></div>
+				<div id="faleConnosco"></div>
+				<div id="mailContact"><a href="mailTo:info@touchandpizza.pt">INFO@TOUCHANDPIZZA.PT</a></div>
+				<div id="shareYourPizza">
+					<p>COM QUEM PARTILHAS?</p>
+					<a href="https://www.facebook.com/Touchandpizza?fref=ts" target="_blank"></a>
+				</div>
+				<img id="pizzaSlice" src="imgs/contacto/ct_detail.png">
+				<div id="copyright">
+					<p>Touch & Pizza, LDA &copy;
+		2014, todos direitos reservados. Do forno com amor por <a target="_blank" href="http://www.lisaportugal.pt">Lisa Portugal.</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="fancyDetails" id="fancyMarga" data-pizza="1">Marga</div>
+		<div class="fancyDetails" id="fancyFQ" data-pizza="2">Fiambre e queijo</div>
+		<div class="fancyDetails" id="fancyPepe" data-pizza="3">Peperonni</div> -->
+		<nav>
+			<ul>
+				<li>
+					Onde estamos
+				</li>
+				<li>
+					<a href="https://www.facebook.com/Touchandpizza?fref=ts" target="_blank">Facebook</a>
+				</li>
+				<li>
+					Fala connosco
+				</li>
+			</ul>
+		</nav>
+
+		<div id="pageZero">
+
+			<div id="logo"><img src="imgs/tp_logo_white.png"></div>
+
+			<div id="btsMask">
+				<div id="hoverLayer"></div>
+				<div id="btMask1"><img src="imgs/nav/nav_original.png"></div>
+				<div id="btMask2"><img src="imgs/nav/nav_press_forno.png"></div>
+				<div id="btMask3"><img src="imgs/nav/nav_original.png"></div>
+				<div id="btMask4"><img src="imgs/nav/nav_press_partilha.png"></div>
+			</div>
+			<div id="bts">
+				<div id="bt1"></div>
+				<div id="bt2"></div>
+				<div id="bt3"></div>
+				<div id="bt4"></div>
+			</div>
+
+			<div id="btLeftSlide"><img src="imgs/slide_4/3_arrow.png"></div>
+			<div id="btRightSlide"><img src="imgs/slide_4/3_arrow.png"></div>
+
+			<div id="slide">
+				<div class="pagesSlider" id="slider1">
+				<canvas id="bikeCanvas"></canvas>
+					<div class="wrapperSlide">
+						<div class="element1" id="cityScape"><img src="imgs/slide_1/1_cityscape.png"></div>
+						<div class="element1" id="raios"><img src="imgs/slide_1/1_ponteiro.png"></div>
+						<div class="element1" id="bgLineTrees"><img src="imgs/slide_1/1_bg_overlay.png"></div>
+						<div class="sliderContainer" id="containerSlide1">
+							<img id="bike" src="imgs/slide_1/1_bike.png">
+							<div id="plane"></div>
+							<div id="clouds1"></div>
+							<div id="clouds2">
+								<div>
+									<img src="imgs/slide_1/1_text_1.png">
+									<img src="imgs/slide_1/1_text_2.png">
+									<img src="imgs/slide_1/1_text_3.png">
+									<img src="imgs/slide_1/1_text_4.png">
+									<img src="imgs/slide_1/1_text_5.png">
+									<img src="imgs/slide_1/1_text_6.png">
+									<img src="imgs/slide_1/1_text_7.png">
+									<img src="imgs/slide_1/1_text_8.png">
+								</div>
+							</div>
+							<div id="pizzaSlide1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="pagesSlider" id="slider2">
+					<div class="wrapperSlide">
+						<div class="element2" id="skyline"><img src="imgs/slide_2/2_skyline.png"></div>
+						<div class="element2" id="street"><img src="imgs/slide_2/2_street.png"></div>
+						<div class="sliderContainer" id="containerSlide2">
+							<div class="element2move" id="tree1"><img src="imgs/slide_2/2_tree.png"></div>
+							<div class="element2move" id="tree2"><img src="imgs/slide_2/2_tree.png"></div>
+							<div class="element2move" id="machine"><img src="imgs/slide_2/2_machine.png"></div>
+							<div class="element2move" id="tableEmpty"><img src="imgs/slide_2/2_table.png"></div>
+							<div class="element2move" id="tableUse"><img src="imgs/slide_2/2_table_use.png"></div>
+							<div id="mainText"><img src="imgs/slide_2/2_main_text.png"></div>
+							<div id="textAux1"><img src="imgs/slide_2/2_text_aux1.png"></div>
+							<div id="textAux2"><img src="imgs/slide_2/2_text_aux2.png"></div>
+							<div id="textAux3"><img src="imgs/slide_2/2_text_aux3.png"></div>
+							<div id="textAux4"><img src="imgs/slide_2/2_text_aux4.png"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pagesSlider" id="slider3">
+					<div class="wrapperSlide">
+						<div class="element3" id="table"></div>
+						<div class="element3" id="fork"></div>
+						<div class="sliderContainer" id="containerSlide3">
+							<div class="element3" id="pizza">
+								<img src="imgs/slide_3/3_pizza_cheese.png">
+								<img src="imgs/slide_3/3_pizza_ham.png">
+								<img src="imgs/slide_3/3_pizza_pep.png">
+							</div>
+							<div id="textLeft"></div>
+							<div id="textRight">
+								<img src="imgs/slide_3/3_text_queijo.png">
+								<img src="imgs/slide_3/3_text_fiambre.png">
+								<img src="imgs/slide_3/3_text_pep.png">
+								<!-- <div data-pizza="1" class="details" style="font-size:20px;width:100px;height:100px;border:1px solid;position:absolute;">MAR</div>
+								<div data-pizza="2" class="details" style="font-size:20px;display:none;width:100px;height:100px;border:1px solid;position:absolute;">FQ</div>
+								<div data-pizza="3" class="details" style="font-size:20px;display:none;width:100px;height:100px;border:1px solid;position:absolute;">PEP</div> -->
+							</div>
+							<div id="btsSlide3">
+								<div><img src="imgs/slide_3/3_button_marg.png"><img src="imgs/slide_3/3_button_shade.png"></div>
+								<div><img src="imgs/slide_3/3_button_fiambre.png"><img src="imgs/slide_3/3_button_shade.png"></div>
+								<div><img src="imgs/slide_3/3_button_pep.png"><img src="imgs/slide_3/3_button_shade.png"></div>
+							</div>
+							<div class="element3" id="cmState1"><img src="imgs/slide_3/3_cm_state1.png"><img style="display:none;" src="imgs/slide_3/3_cm_state2.png"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pagesSlider" id="slider4">
+					<div class="wrapperSlide" id="wrapperSlide4">
+						<img alt="pattern slide 4" id="patternSlide4" src="imgs/slide_4/3_pattern.png">
+						<img id="hills" alt="hills" src="imgs/slide_4/3_hills.png">
+						<div class="sliderContainer" id="containerSlide4">
+							<div id="mainTextSlide4"></div>
+							<div id="photosSlide4">
+								<div><img src="imgs/slide_4/1_left.jpg"><img src="imgs/slide_4/2_left.jpg"><img src="imgs/slide_4/3_left.jpg"></div>
+								<div><img src="imgs/slide_4/1_mid.jpg"><img src="imgs/slide_4/2_mid.jpg"><img src="imgs/slide_4/3_mid.jpg"></div>
+								<div><img src="imgs/slide_4/1_right.jpg"><img src="imgs/slide_4/2_right.jpg"><img src="imgs/slide_4/3_right.jpg"></div>
+							</div>
+							<p id="saiRodada">Sai uma “Rodada de Pizzaaaaaas!”</p>
+							<img id="arrowSlide4" src="imgs/slide_4/3_arrow.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="wrapper">
+			<div id ="wrapperWhere">
+				<div id="logoToUp"><img src="imgs/tp_logo_red.png"></div>
+				<div id="containerWhere">
+					<div id="where1">
+						<div></div>
+					</div>
+					<div id="where2">
+						<div class="fb-like-box" data-href="https://www.facebook.com/Touchandpizza?fref=ts" data-width="320" data-height="480" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>
+					</div>
+					<div id="map">
+						
+					</div>
+					<div id="where3">
+						
+					</div>
+					<div id="where4">
+						<div></div>
+						<div><a href="https://www.facebook.com/Touchandpizza?fref=ts" target="_blank"></a></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div id="where5">
+						<div></div>
+						<div style="background-image: url('admin/imgs/5bd07df0c58b6245408ae9fbcdc6ea35_9115_153306.png')"><div><p>Pizzas saborosas em apenas 2 minutos!</p></div></div>
+					</div>
+					<div id="where6">
+						<img alt="bike" src="imgs/scroll_down/scroll_bike.png">
+					</div>
+					<div id="adds">
+						<p>Nossos parceiros: </p>
+						<a target="_blank" href="http://www.novasu-sbe.com/"><img alt="su" src="imgs/logos/nova_su_logo.png"></a>
+						<a target="_blank" href="http://www.typeitstore.pt/"><img alt="type" src="imgs/logos/logo_type.png"></a>
+						<a target="_blank" href="http://www.intertrafego.pt/"><img alt="intertrafego" src="imgs/logos/logo_itt.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="MobileLayout">
+		<div id="fancyTalkToUsMob">
+				<div id="containerFancyMob">
+					<div id="closeFancyMob"></div>
+					<div id="logoContactMob"><img src="imgs/tp_logo_white.png"></div>
+					<div id="faleConnoscoMob"></div>
+					<div id="mailContactMob"><a href="mailTo:info@touchandpizza.pt">INFO@TOUCHANDPIZZA.PT</a></div>
+					<div id="shareYourPizzaMob">
+						<p>COM QUEM PARTILHAS?</p>
+						<a href="https://www.facebook.com/Touchandpizza?fref=ts" target="_blank"></a>
+					</div>
+					<img id="pizzaSliceMob" src="imgs/contacto/ct_detail.png">
+					<div id="copyrightMob">
+						<p>Touch & Pizza, LDA &copy;
+			2014, todos direitos reservados. Do forno com amor por <a target="_blank" href="http://www.lisaportugal.pt">Lisa Portugal.</a></p>
+					</div>
+				</div>
+			</div>
+		<nav>
+			<ul>
+				<li class="goDown">
+					Onde estamos
+				</li>
+				<li>
+					<a href="https://www.facebook.com/Touchandpizza?fref=ts" target="_blank">Facebook</a>
+				</li>
+				<li id="talkToUsMob">
+					Fala connosco
+				</li>
+			</ul>
+		</nav>
+		<div id="pageZeroMob">
+			<div id="logoMob"><img src="imgs/tp_logo_white.png"></div>
+
+			<div id="btsMaskMob">
+				<div id="btMask1Mob"><img src="imgs/nav/nav_original.png"></div>
+				<div id="btMask2Mob"><img src="imgs/nav/nav_press_forno.png"></div>
+				<div id="btMask3Mob"><img src="imgs/nav/nav_original.png"></div>
+				<div id="btMask4Mob"><img src="imgs/nav/nav_press_partilha.png"></div>
+			</div>
+			<div id="btsMob">
+				<div id="bt1Mob"></div>
+				<div id="bt2Mob"></div>
+				<div id="bt3Mob"></div>
+				<div id="bt4Mob"></div>
+			</div>
+
+			<div id="btLeftSlideMob"><img src="imgs/slide_4/3_arrow.png"></div>
+			<div id="btRightSlideMob"><img src="imgs/slide_4/3_arrow.png"></div>
+
+			<div id="slideMob">
+				<div class="pagesSliderMob" id="slider1Mob">
+					<div class="wrapperSlideMob">
+						<img id="treesMob" alt="textslide1 mb" src="imgs/slide_1/mb_slide1_trees.png">
+						<img id="clockMob" src="imgs/slide_1/mb_slide1_clock.png">
+						<div class="sliderContainer" id="containerSlide1">
+							<img id="slide1TextMob" alt="textslide1 mb" src="imgs/slide_1/mb_slide1_text.png">
+							<div id="clouds2Mob">
+								<img src="imgs/slide_1/1_text_1.png">
+								<img src="imgs/slide_1/1_text_2.png">
+								<img src="imgs/slide_1/1_text_3.png">
+								<img src="imgs/slide_1/1_text_4.png">
+								<img src="imgs/slide_1/1_text_5.png">
+								<img src="imgs/slide_1/1_text_6.png">
+								<img src="imgs/slide_1/1_text_7.png">
+								<img src="imgs/slide_1/1_text_8.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagesSliderMob" id="slider2Mob">
+					<div class="wrapperSlideMob">
+						<div class="sliderContainerMob" id="containerSlide2Mob">
+							<img id="mainTextMob" alt="main text mb" src="imgs/slide_2/mb_text2.png">
+						</div>
+					</div>
+				</div>
+				<div class="pagesSliderMob" id="slider3Mob">
+					<div class="wrapperSlideMob">
+						<div class="element3Mob" id="tableMob"></div>
+						<div class="sliderContainerMob" id="containerSlide3Mob">
+							<div class="element3Mob" id="pizzaMob">
+								<img src="imgs/slide_3/3_pizza_cheese.png">
+								<img src="imgs/slide_3/3_pizza_ham.png">
+								<img src="imgs/slide_3/3_pizza_pep.png">
+							</div>
+							<div id="textLeftMob"></div>
+							<div id="textRightMob">
+								<img src="imgs/slide_3/mb_slide3_queijo.png">
+								<img src="imgs/slide_3/mb_slide3_fiambre.png">
+								<img src="imgs/slide_3/mb_slide3_pepperoni.png">
+							</div>
+							<div id="btsSlide3Mob">
+								<div><img src="imgs/slide_3/3_button_marg.png"><img src="imgs/slide_3/3_button_shade.png"></div>
+								<div><img src="imgs/slide_3/3_button_fiambre.png"><img src="imgs/slide_3/3_button_shade.png"></div>
+								<div><img src="imgs/slide_3/3_button_pep.png"><img src="imgs/slide_3/3_button_shade.png"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagesSliderMob" id="slider4Mob">
+					<div class="wrapperSlideMob" id="wrapperSlide4Mob">
+						<img id="hillsMob" alt="hills" src="imgs/slide_4/3_hills.png">
+						<div class="sliderContainerMob" id="containerSlide4Mob">
+							<img id="mainText4Mob" alt="text slide4" src="imgs/slide_4/mb_slide4_text.png">
+							<div id="photosSlide4Mob">
+								<img src="imgs/slide_4/1_mid.jpg"><img src="imgs/slide_4/2_mid.jpg"><img src="imgs/slide_4/3_mid.jpg">
+							</div>
+							<img id="arrowSlide4Mob" src="imgs/slide_4/3_arrow.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="whereMob">
+			<div id="whereMob1">
+				<div>
+					<img alt="logo" src="imgs/tp_logo_red.png">
+				</div>
+				<div>
+					<img alt="text" src="imgs/scroll_down/mb_scroll_text.png">
+				</div>
+			</div>
+			<div id="whereMob2">
+				
+			</div>
+			<div id="whereMob3">
+				<div></div>
+				<a href="https://www.facebook.com/Touchandpizza?fref=ts" target="_blank"></a>
+			</div>
+			<div id="whereMob4">
+				<img alt="mb box" src="imgs/scroll_down/mb_scroll_box.png">
+			</div>
+			<div id="mapMob">
+				
+			</div>
+			<div id="whereMob6">
+				<div style="background-image: url('admin/imgs/5bd07df0c58b6245408ae9fbcdc6ea35_9115_153306.png')">
+					<div>
+						<p>Pizzas saborosas em apenas 2 minutos!</p>
+					</div>
+				</div>
+				<div>
+					<img alt="mb bike" src="imgs/scroll_down/mb_scroll_bike.png">
+				</div>
+			</div>
+		</div>
+		<div id="addsMob">
+			<p>Nossos parceiros: </p>
+			<a target="_blank" href="http://www.novasu-sbe.com/"><img alt="su" src="imgs/logos/nova_su_logo.png"></a>
+			<a target="_blank" href="http://www.typeitstore.pt/"><img alt="type" src="imgs/logos/logo_type.png"></a>
+			<a target="_blank" href="http://www.intertrafego.pt/"><img alt="intertrafego" src="imgs/logos/logo_itt.png"></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/desktopLayout.js"></script>
+	<script type="text/javascript" src="js/mobileLayout.js"></script>
+	<script type="text/javascript" src="js/pizza-loading.js"></script>
+	<script type="text/javascript" src="js/bike.js"></script>
+	
+
+<script type="text/javascript">var locations = [
+	["<h4>NOVA IMS, Rua Campolide 1070-312 Lisboa</h4>", 38.733034, -9.160380],
+	["<h4></h4>", ]
+];
+    // Setup the different icons and shadows
+    var iconURLPrefix = "http://maps.google.com/mapfiles/ms/icons/";
+    
+    var icons = [
+      iconURLPrefix + "blue-dot.png"
+    ]
+    var icons_length = icons.length;
+    
+    
+    var shadow = {
+      anchor: new google.maps.Point(15,33),
+      url: iconURLPrefix + "msmarker.shadow.png"
+    };
+
+    var map1 = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: new google.maps.LatLng(-37.92, 151.25),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeControl: false,
+      streetViewControl: false,
+      scrollwheel: false,
+      panControl: false,
+      zoomControlOptions: {
+      position: google.maps.ControlPosition.LEFT_BOTTOM
+      }
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 160
+    });
+
+    var marker;
+    var markers = new Array();
+    
+    var iconCounter = 0;
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map1,
+        icon : icons[iconCounter],
+        shadow: shadow
+      });
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, "click", (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map1, marker);
+        }
+      })(marker, i));
+      
+      iconCounter++;
+      // We only have a limited number of possible icon colors, so we may have to restart the counter
+      if(iconCounter >= icons_length){
+        iconCounter = 0;
+      }
+    }
+      map1.set("styles", [
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "saturation": 43
+            },
+            {
+                "lightness": -11
+            },
+            {
+                "hue": "#0088ff"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "hue": "#ff0000"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 99
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#808080"
+            },
+            {
+                "lightness": 54
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ece2d9"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ccdca1"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#767676"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#b8cb93"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    }
+]);
+
+map1.setCenter(new google.maps.LatLng(38.733034, -9.160380));
+	
+	</script><script type="text/javascript">var locations = [
+	["<h4>NOVA IMS, Rua Campolide 1070-312 Lisboa</h4>", 38.733034, -9.160380],
+	["<h4></h4>", ]
+];
+    // Setup the different icons and shadows
+    var iconURLPrefix = "http://maps.google.com/mapfiles/ms/icons/";
+    
+    var icons = [
+      iconURLPrefix + "blue-dot.png"
+    ]
+    var icons_length = icons.length;
+    
+    
+    var shadow = {
+      anchor: new google.maps.Point(15,33),
+      url: iconURLPrefix + "msmarker.shadow.png"
+    };
+
+    var map = new google.maps.Map(document.getElementById("mapMob"), {
+      zoom: 15,
+      center: new google.maps.LatLng(-37.92, 151.25),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeControl: false,
+      streetViewControl: false,
+      scrollwheel: false,
+      panControl: false,
+      zoomControlOptions: {
+      position: google.maps.ControlPosition.LEFT_BOTTOM
+      }
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 160
+    });
+
+    var marker;
+    var markers = new Array();
+    
+    var iconCounter = 0;
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon : icons[iconCounter],
+        shadow: shadow
+      });
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, "click", (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+      
+      iconCounter++;
+      // We only have a limited number of possible icon colors, so we may have to restart the counter
+      if(iconCounter >= icons_length){
+        iconCounter = 0;
+      }
+    }
+      map.set("styles", [
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "saturation": 43
+            },
+            {
+                "lightness": -11
+            },
+            {
+                "hue": "#0088ff"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "hue": "#ff0000"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 99
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#808080"
+            },
+            {
+                "lightness": 54
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ece2d9"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ccdca1"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#767676"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#b8cb93"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    }
+]);
+
+map.setCenter(new google.maps.LatLng(38.733034, -9.160380));
+	
+	</script></body>
+</html>
